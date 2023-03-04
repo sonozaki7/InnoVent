@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-top: 2em;
+  }
+  
+  form {
+    margin-top: 2em;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .subtitle-text {
+    margin-top: 2em;
+    white-space: pre-wrap;
+    text
+  

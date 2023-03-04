@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Subtitle Transcription</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Subtitle Transcription</h1>
+    {% if error %}
+      <div class="error">{{ error }}</div>
+    {% endif %}
+    <form method="post" enctype="multipart/form-data">
+      <input type="file" name="audio_file">
+      <input type="submit" value="Transcribe">
+    </form>
+    {% if subtitle_text %}
+      <div class="subtitle-text">{{ subtitle_text }}</div>
+    {% endif %}
+  </body>
+</html>
